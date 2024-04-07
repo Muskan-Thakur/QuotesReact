@@ -1,0 +1,100 @@
+/* body{
+  background-color: #F2DD6E;
+}
+.box
+{
+    border: 2px solid #523A34;
+    border-radius: 5%;
+    background-color: #E5B25D;
+    padding: 5px;
+    width: 250px;
+    margin: 10px;
+    
+
+}
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+h3,h1{
+ color: #523A34;
+  text-align: center;
+
+}
+
+.author
+{
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+}
+
+ */
+
+ /* App.css */
+ body{
+  background-color: #F2DD6E;
+ }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  border: 2px solid #eaeaea;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 200px;
+  height: 80px;
+  margin: auto;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.author {
+  text-align: right;
+  font-style: italic;
+  color: #555;
+}
+
+h1 {
+  text-align: center;
+  color: #523A34;
+}
+
+h3, h5 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.box {
+  animation: fadeIn 1s;
+}
+
+
